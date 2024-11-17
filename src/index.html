@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lechat IRC Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-bar">
+        <span>lechat</span>
+        <span class="menu-item">View</span>
+        <span class="menu-item">Server</span>
+        <span class="menu-item">Settings</span>
+        <span class="menu-item">Window</span>
+        <span class="menu-item">Help</span>
+    </div>
+    <div class="connection-screen" style="margin-top: 20px;">
+        <pre class="ascii-art">
+            ██╗     ███████╗ ██████╗██╗  ██╗ █████╗ ████████╗
+            ██║     ██╔════╝██╔════╝██║  ██║██╔══██╗╚══██╔══╝
+            ██║     █████╗  ██║     ███████║███████║   ██║   
+            ██║     ██╔══╝  ██║     ██╔══██║██╔══██║   ██║   
+            ███████╗███████╗╚██████╗██║  ██║██║  ██║   ██║   
+            ╚══════╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
+        </pre>
+        <div class="input-group">
+            <input type="text" id="server" placeholder="IRC Server (e.g., irc.efnet.org)">
+        </div>
+        <div class="input-group">
+            <input type="text" id="port" placeholder="Port (e.g., 6697)">
+        </div>
+        <div class="input-group">
+            <input type="text" id="nickname" placeholder="Nickname">
+        </div>
+        <div class="input-group">
+            <input type="text" id="channel" placeholder="Channel (e.g., #lechatdev)">
+        </div>
+        <button id="tls-toggle" class="tls-button">TLS: Off</button>
+        <button id="connect" class="connect-button">Connect</button>
+    </div>
+
+    <div class="chat-window hidden">
+        <div id="message-area"></div>
+        <input type="text" id="message" placeholder="Type your message...">
+        <button id="send-message">Send</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
