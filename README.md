@@ -33,6 +33,7 @@ pnpm tauri dev
 In src-tauri we have the rust code.
 In src we have the frontend in vanilla JS/HTML.
 
+```shell
 lechat/
 ├── src-tauri/
 │   ├── Cargo.toml
@@ -65,7 +66,7 @@ lechat/
 │           └── message.js
 ├── package.json
 └── ...
-
+```
 ## Licence
 
 GPLv3.
